@@ -40,6 +40,7 @@ class DetailActivity : AppCompatActivity() {
        Glide.with(this).load(pokemonModels.sprites.frontDefault).into(binding.ivPokemon)
         isShiny(pokemonModels)
         prepareState(pokemonModels)
+         binding.tvPokemonName.text = pokemonModels.name
         binding.tvHeight.text = "Altura: ${pokemonModels.height / 10.0}m"
         binding.tvWeight.text = "Peso: ${pokemonModels.weight / 10.0}kg"
 
