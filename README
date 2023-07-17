@@ -17,6 +17,7 @@ Para utilizar correctamente la app, agregar estas dependencias y hacer las sigui
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 
+    implementation project(path: ':moduloreloj')
 
 mantener compile sdk en 33
 
@@ -32,3 +33,6 @@ en defaultConfig{
   minSdk:24
   target sdk 31
 }
+
+
+Intente hacer el reloj desde un modulo pero no logre implementarlo como esperaba asique deje el reloj desde la app principal igualmente para que se vea.
